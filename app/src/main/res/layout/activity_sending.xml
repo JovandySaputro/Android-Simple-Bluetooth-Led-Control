@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sending">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:text="Bluethoot"
+        android:id="@+id/btnBluethoot"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Disconnected"
+        android:id="@+id/ID_STATUSTEXT"
+        android:layout_centerHorizontal="true"
+        android:enabled="true"
+        android:layout_margin="5dp"
+        android:gravity="bottom|center"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true" />
+    <TextView
+        android:id="@+id/textSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:text="Send Value"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="30sp"/>
+
+    <EditText
+        android:id="@+id/variable_1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textSend"
+        android:hint="input variable 1 here"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:id="@+id/variable_2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/variable_1"
+        android:hint="input variable 2 here"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <Button
+        android:id="@+id/buttonSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/variable_2"
+        android:text="SEND"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <Button
+        android:id="@+id/buttonON"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonSend"
+        android:text="LED ON"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <Button
+        android:id="@+id/buttonOFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonSend"
+        android:text="LED OFF"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="150dp"/>
+
+</RelativeLayout>
